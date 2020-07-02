@@ -1,0 +1,12 @@
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\bin\Release\BanMayBay.exe.config
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\bin\Release\BanMayBay.exe
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\bin\Release\BanMayBay.pdb
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.frmMain.resources
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.frmGame1.resources
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.frmGame2.resources
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.frmGame3.resources
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.frmGhiDanh.resources
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.Properties.Resources.resources
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.csproj.GenerateResource.Cache
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.exe
+D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.pdb
