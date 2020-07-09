@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,8 +19,8 @@ namespace BanMayBay
         private int vDa = 2;
         private int vItem = 3;
         private static int vUFO = 2;
-        private int speed = 8;
-        private int vDan = 5;
+        private int speed = 12;
+        private int vDan = 6;
         private bool checkBan = false;
 
         bool Danufo1Tontai = false;
@@ -175,13 +176,14 @@ namespace BanMayBay
             {
                 checkBan = false;
                 picDanLua.Visible = false;
+                AmThanh("shot.wav");
             }
             if (Danufo1Tontai || Danufo2Tontai)
             {
                 //Danufo1
                 if (checkBanUfo1 == true)
                 {
-                    Danurf1.Top += vDan - 3;
+                    Danurf1.Top +=  3;
                     Danurf1.Visible = true;
                 }
 
@@ -194,7 +196,7 @@ namespace BanMayBay
                 //Danurf2
                 if (checkBanUfo2 == true)
                 {
-                    Danurf2.Top += vDan - 2;
+                    Danurf2.Top += 4;
                     Danurf2.Visible = true;
                 }
 
@@ -248,6 +250,7 @@ namespace BanMayBay
                 picBum.Visible = true;
                 picDa1.Visible = false;
                 picDanLua.Visible = false;
+                AmThanh("bum.wav");
             }
             if (picDanLua.Bounds.IntersectsWith(picDa2.Bounds) && picDanLua.Visible == true && picDa2.Visible == true)
             {
@@ -255,6 +258,7 @@ namespace BanMayBay
                 picBum.Visible = true;
                 picDa2.Visible = false;
                 picDanLua.Visible = false;
+                AmThanh("bum.wav");
             }
             if (picDanLua.Bounds.IntersectsWith(picufo1.Bounds) && picDanLua.Visible == true && picufo1.Visible == true)
             {
@@ -266,6 +270,7 @@ namespace BanMayBay
                     this.picBum.Location = new Point(picufo1.Location.X, picufo1.Location.Y);
                     picBum.Visible = true;
                     picufo1.Visible = false;
+                    AmThanh("bum.wav");
                     chonSuKien().Location = new Point(picufo1.Location.X + picufo1.Width / 2 - chonSuKien().Width / 2, picufo1.Location.Y + chonSuKien().Height);
                 }
             }
@@ -279,6 +284,7 @@ namespace BanMayBay
                     this.picBum.Location = new Point(picufo2.Location.X, picufo2.Location.Y);
                     picBum.Visible = true;
                     picufo2.Visible = false;
+                    AmThanh("bum.wav");
                     chonSuKien().Location = new Point(picufo2.Location.X + picufo2.Width / 2 - chonSuKien().Width / 2, picufo2.Location.Y + chonSuKien().Height);
                 }
             }
@@ -299,7 +305,7 @@ namespace BanMayBay
         {
             if (picMayBay.Bounds.IntersectsWith(picTangToc.Bounds) && picTangToc.Visible == true)
             {
-                vDan = 6;
+                vDan = 8;
                 picTangToc.Visible = false;
                 tang = true;
             }
@@ -310,7 +316,7 @@ namespace BanMayBay
             else
             {
                 dem5s = 0;
-                vDan = 4;
+                vDan = 6;
                 tang = false;
             }
         }
@@ -371,11 +377,25 @@ namespace BanMayBay
         }
         private void CheckPass()
         {
-            if (TienHa.Coint >= 3 && TienHa.Pass >= 3)
+            if (TienHa.Coint + TienHa.Pass >= 100)
             {
                 DialogResult = DialogResult.OK;
                 GameOver();
             }
+        }
+        private void AmThanh(string name)
+        {
+            Thread th1 = new Thread(new ThreadStart(() =>
+            {
+                try
+                {
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(name);
+                    player.Play();
+                }
+                catch { }
+            }));
+            th1.Start();
+            th1.IsBackground = true;
         }
     }
 }

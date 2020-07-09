@@ -82,7 +82,7 @@
             this.btnQuit.Location = new System.Drawing.Point(71, 181);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(123, 32);
-            this.btnQuit.TabIndex = 2;
+            this.btnQuit.TabIndex = 3;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = false;
             this.btnQuit.Click += new System.EventHandler(this.btnQuit_Click);
@@ -96,7 +96,7 @@
             this.btnHigh.Location = new System.Drawing.Point(71, 131);
             this.btnHigh.Name = "btnHigh";
             this.btnHigh.Size = new System.Drawing.Size(123, 32);
-            this.btnHigh.TabIndex = 3;
+            this.btnHigh.TabIndex = 2;
             this.btnHigh.Text = "High score";
             this.btnHigh.UseVisualStyleBackColor = false;
             this.btnHigh.Click += new System.EventHandler(this.btnHigh_Click);
@@ -121,6 +121,7 @@
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bắn máy bay";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
 
         }

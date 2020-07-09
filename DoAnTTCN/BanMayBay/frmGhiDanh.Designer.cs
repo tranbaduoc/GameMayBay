@@ -69,6 +69,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmGhiDanh";
             this.Text = "Điểm cao";
+            this.Load += new System.EventHandler(this.frmGhiDanh_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

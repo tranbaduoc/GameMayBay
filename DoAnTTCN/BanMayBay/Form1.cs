@@ -6,6 +6,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -39,18 +40,27 @@ namespace BanMayBay
                             }
                             else
                             {
+                                player.Coint = 0;
+                                player.Pass = 0;
+                                AmThanh("GameOver.wav");
                                 MessageBox.Show("Bạn đã thua.\n Lêu lêu cái đồ chơi dốt.\n Có cái kỷ lục cũng không phá được.");
                             }
                         }
                     }
                     else
                     {
+                        player.Coint = 0;
+                        player.Pass = 0;
+                        AmThanh("GameOver.wav");
                         MessageBox.Show("Bạn đã thua", "Hệ thống");
                     }
                 }
             }
             else
             {
+                player.Coint = 0;
+                player.Pass = 0;
+                AmThanh("GameOver.wav");
                 MessageBox.Show("Bạn đã thua", "Hệ thống");
             }
         }
@@ -103,6 +113,26 @@ namespace BanMayBay
                 MessageBox.Show("Người chơi có số điểm cao nhất là: "+pair.Key + ".\nVới số điểm là: " + pair.Value,"Hệ thống! ",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 break;
             }
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            AmThanh("nen.wav");
+        }
+
+        private void AmThanh(string name)
+        {
+            Thread th1 = new Thread(new ThreadStart(() =>
+            {
+                try
+                {
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(name);
+                    player.Play();
+                }
+                catch { }
+            }));
+            th1.Start();
+            th1.IsBackground = true;
         }
     }
 }
