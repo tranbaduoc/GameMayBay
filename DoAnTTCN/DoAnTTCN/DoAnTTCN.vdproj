@@ -15,19 +15,25 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0BFAABE95CD71C7BCF0513FEB7F338BE"
-        "OwnerKey" = "8:_9F3B74595FB04FF8ABEB01F3C7FBC349"
+        "MsmKey" = "8:_00B6940C8FEC4C658DBFF869AD430F3C"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_0BFAABE95CD71C7BCF0513FEB7F338BE"
-        "OwnerKey" = "8:_59925B6E5C754C9BA479396F51836B4B"
+        "MsmKey" = "8:_4D40C9E858764A2FA3E97F520D17AE80"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_59925B6E5C754C9BA479396F51836B4B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_91EE7476BA884AC58110AF8D08AEAA31"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -39,8 +45,38 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A0709B19F33C8EB7F838E7563F99D0D6"
+        "OwnerKey" = "8:_59925B6E5C754C9BA479396F51836B4B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A0709B19F33C8EB7F838E7563F99D0D6"
+        "OwnerKey" = "8:_9F3B74595FB04FF8ABEB01F3C7FBC349"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_B77FA2E947DD4593BB4278A3636EAA05"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D74DE5609B5A4EBE9884EBFE0F81B1F5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_ED6B941462544B83A72D4EDBA650DAB3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0BFAABE95CD71C7BCF0513FEB7F338BE"
+        "OwnerKey" = "8:_9F3B74595FB04FF8ABEB01F3C7FBC349"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -52,7 +88,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9F3B74595FB04FF8ABEB01F3C7FBC349"
+        "OwnerKey" = "8:_A0709B19F33C8EB7F838E7563F99D0D6"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -73,6 +109,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -89,6 +133,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -118,14 +178,74 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0BFAABE95CD71C7BCF0513FEB7F338BE"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_00B6940C8FEC4C658DBFF869AD430F3C"
+            {
+            "SourcePath" = "8:..\\BanMayBay\\bin\\Debug\\Victory.wav"
+            "TargetName" = "8:Victory.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_8142CD2F32E84A4C86FB54A3AE840C83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4D40C9E858764A2FA3E97F520D17AE80"
+            {
+            "SourcePath" = "8:..\\BanMayBay\\bin\\Debug\\nen.wav"
+            "TargetName" = "8:nen.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_8142CD2F32E84A4C86FB54A3AE840C83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_91EE7476BA884AC58110AF8D08AEAA31"
+            {
+            "SourcePath" = "8:..\\BanMayBay\\bin\\Debug\\DiemCao.txt"
+            "TargetName" = "8:DiemCao.txt"
+            "Tag" = "8:"
+            "Folder" = "8:_8142CD2F32E84A4C86FB54A3AE840C83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A0709B19F33C8EB7F838E7563F99D0D6"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_0BFAABE95CD71C7BCF0513FEB7F338BE"
+                    "_A0709B19F33C8EB7F838E7563F99D0D6"
                     {
                     "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
@@ -147,6 +267,66 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B77FA2E947DD4593BB4278A3636EAA05"
+            {
+            "SourcePath" = "8:..\\BanMayBay\\bin\\Debug\\GameOver.wav"
+            "TargetName" = "8:GameOver.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_8142CD2F32E84A4C86FB54A3AE840C83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D74DE5609B5A4EBE9884EBFE0F81B1F5"
+            {
+            "SourcePath" = "8:..\\BanMayBay\\bin\\Debug\\bum.wav"
+            "TargetName" = "8:bum.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_8142CD2F32E84A4C86FB54A3AE840C83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_ED6B941462544B83A72D4EDBA650DAB3"
+            {
+            "SourcePath" = "8:..\\BanMayBay\\bin\\Debug\\shot.wav"
+            "TargetName" = "8:shot.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_8142CD2F32E84A4C86FB54A3AE840C83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -217,7 +397,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:DoAnTTCN"
         "ProductCode" = "8:{9C3BE39D-9D2E-4FF3-A23D-C1F53B650F48}"
-        "PackageCode" = "8:{03C99BA3-C423-4685-BC13-AF3D3728EF70}"
+        "PackageCode" = "8:{B8386DBB-8B8C-4A06-9D17-E804C0E11A00}"
         "UpgradeCode" = "8:{4CA57175-A466-459F-AB92-73572CC6ADA6}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

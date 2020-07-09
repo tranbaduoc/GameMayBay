@@ -10,3 +10,6 @@ D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.Prope
 D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.csproj.GenerateResource.Cache
 D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.exe
 D:\duoc\E\HoangKhoaVan\SourceCode\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.pdb
+C:\Users\BOYPY\Desktop\DoAnTTCN\BanMayBay\bin\Release\BanMayBay.exe.config
+C:\Users\BOYPY\Desktop\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.exe
+C:\Users\BOYPY\Desktop\DoAnTTCN\BanMayBay\obj\Release\BanMayBay.pdb

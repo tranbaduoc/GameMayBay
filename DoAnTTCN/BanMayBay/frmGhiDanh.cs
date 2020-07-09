@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace BanMayBay
 {
@@ -46,6 +47,25 @@ namespace BanMayBay
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void frmGhiDanh_Load(object sender, EventArgs e)
+        {
+            AmThanh("Victory.wav");
+        }
+        private void AmThanh(string name)
+        {
+            Thread th1 = new Thread(new ThreadStart(() =>
+            {
+                try
+                {
+                    System.Media.SoundPlayer player = new System.Media.SoundPlayer(name);
+                    player.Play();
+                }
+                catch { }
+            }));
+            th1.Start();
+            th1.IsBackground = true;
         }
     }
 }
